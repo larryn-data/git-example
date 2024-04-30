@@ -106,7 +106,7 @@ function setupAlert(){
     const wrapper = document.createElement('div')
     wrapper.innerHTML = `
       <div class="alert alert-${type} alert-dismissible" role="alert">
-        <div>${message}</div>
+        <div>${message} <a href="cart.html">cart</a>!</div>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
     `
@@ -117,7 +117,7 @@ function setupAlert(){
   const alertTrigger = document.getElementById('liveAlertBtn')
   if (alertTrigger) {
     alertTrigger.addEventListener('click', () => {
-      appendAlert('Item added to cart!', 'success')
+      appendAlert('Item added to', 'success')
     })
   } else {
     console.log("Error: Cannot get liveAlertBtn element")
