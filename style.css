@@ -2,14 +2,13 @@
     color: #fff7d1;
 }
 
-/*  */
-
+/* MARK: index.html */
 #products-container {
     margin-bottom: 300px;
 }
 
 
-/* Blog */
+/* MARK: blog.html */
 .post {
     margin-bottom: 3rem;
 }

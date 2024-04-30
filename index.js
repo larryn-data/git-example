@@ -63,6 +63,7 @@ function loadProductDetail() {
   let product = JSON.parse(productString)
 
   let detail = createProductDetail(product);
+  document.title = `${product.title}: Emerald`
 
   const container = document.getElementById("product-detail");
 
