@@ -84,7 +84,7 @@ function createProductDetail(product) {
         <img class="img-fluid" src="${imgUrl}">
       </div>
       <div class="col-md-6">
-        <h1 class="display-4">${title}</h1>
+        <h1 class="display-4" id="product-id">${title}</h1>
         <p>${description}</p>
         <div class="row mt-5">
           <div class="col">
