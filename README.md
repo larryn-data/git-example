@@ -1,2 +1,2 @@
-# git-example
+# gtm-example
 Mock ecommerce website for testing Google Analytics and Google Tag Manager
