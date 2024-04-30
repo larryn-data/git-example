@@ -45,8 +45,8 @@
       
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav me-auto">
-          <a class="nav-link active" href="index.html">Home</a>
-          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" href="blog.html">Blog</a>
           <a class="nav-link" href="#">About</a>
           <a class="nav-link" href="#">Contact Us</a>
         </div>
@@ -60,44 +60,43 @@
 </header>
 <!-- NavBar end -->
 
-  <!-- Hero -->
-  <div class="jumbotron py-5 text-center">
-    <h1 class="display-4">NEW ARRIVALS</h1>
-    <p class="lead">All your spring wardrobe essentials</p>
-    <hr class="my-4">
-  </div>
-  <!-- Hero -->
+<!-- Blog -->
+<div class="container py-5">
+    <div class="post">
+        <h1>New summer trends</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptas ipsam reprehenderit quas excepturi, rerum incidunt sapiente aut ipsum accusamus numquam nobis illum? Modi, harum iusto soluta officia, in suscipit placeat nesciunt accusamus assumenda, quod molestias vel praesentium commodi quasi porro odio cumque. Iusto accusamus sit esse iste, libero veritatis deserunt laboriosam sequi amet nihil, officia nesciunt rerum dicta recusandae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dicta qui, dolores fugiat sapiente illum. Ipsa, dolore commodi! Porro quis corrupti sapiente labore veritatis nisi temporibus, in odio facere nesciunt numquam illum voluptate eaque minima tempore cupiditate maxime laborum. Obcaecati quas nostrum blanditiis. Sed assumenda laborum, et atque ex tempora.</p>
+        <a href="http://google.com">Outbound link</a>
+    </div>   
+  
+    <div class="post">
+        <h1>The history of the hoodie</h1>
+        <p>Ingrid Nilsen tells the story of: the hoodie. Did you know that its origin dates back several centuries? Discover how it has gone from being an exclusively sportswear garment to becoming one of the most popular fashion garments.</p>
+        <div class="video-container text-center">
+            <iframe 
+                width="560" height="315" 
+                src="https://www.youtube.com/embed/FnR2urPDvoE?si=z-qhU6gaHtcPkARe" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>   
 
-<!-- Products -->
-<div class="container">    
-  <div id="products-container" class="row"></div>
+    <div class="post">
+      <h1>Spring sale</h1>
+      <p>Enjoy 10% off all items when you use the free downloadable coupon below.</p>
+      <a href="assets/coupon.png" download><img class="img-fluid" src="assets/coupon.png" alt="coupon"></a>
+    </div>
+    
 </div>
-<!-- Products End -->
+<!-- Blog end -->
 
-<!-- Footer -->
-<footer class="container-fluid fixed-bottom bg-dark text-center">
-  <div class="container p-5">
-      <div class="row">
-          <div class="col-sm-12">
-              <div class="content">
-                  <form>
-                      <h3 class="text-light">Sign up for email</h3>
-                      <p class="text-light">Be the first to know about new arrivals, exclusive great deals, & more.</p>
-                      <div class="input-group">
-                          <input type="email" class="form-control" placeholder="Email Address">
-                          <span class="input-group-btn bg-warning rounded-end-2">
-                              <button class="btn" type="submit">Subscribe Now</button>
-                          </span>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div>
-  </div>
-</footer>
-<!-- Footer End -->
-
-<script>loadProducts()</script>
-
+<script>
+  loadProductDetail()
+  setupAlert()
+</script>
 </body>
 </html>
