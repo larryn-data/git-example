@@ -53,6 +53,24 @@ function createProductPreview(product, id) {
   return preview;
 }
 
+function setupNewsletterButtons() {
+  const newsletterBanner = document.getElementById('newsletterBanner')
+  const newsletterForm = document.getElementById('newsletterForm')
+  const subscribedMessage = document.getElementById('subscribedMessage')
+
+  const dismissButton = document.getElementById('dismissButton')
+  const subscribeButton = document.getElementById('subscribeButton')
+
+  dismissButton.addEventListener('click', () => {
+    newsletterBanner.className = "d-none"
+  })
+
+  subscribeButton.addEventListener('click', () => {
+    newsletterForm.className = "d-none"
+    subscribedMessage.classList.remove("d-none")
+  })
+}
+
 // MARK: Product
 
 function loadProductDetail() {

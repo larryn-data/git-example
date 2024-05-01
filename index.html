@@ -64,7 +64,7 @@
   <div class="jumbotron py-5 text-center">
     <h1 class="display-4">NEW ARRIVALS</h1>
     <p class="lead">All your spring wardrobe essentials</p>
-    <hr class="my-4">
+    <hr class="m-4">
   </div>
   <!-- Hero -->
 
@@ -75,21 +75,24 @@
 <!-- Products End -->
 
 <!-- Footer -->
-<footer class="container-fluid fixed-bottom bg-dark text-center">
-  <div class="container p-5">
+<footer class="container-fluid fixed-bottom bg-dark text-end" id="newsletterBanner">
+  <button type="button" id="dismissButton" class="btn-close btn-close-white mt-2" aria-label="Close"></button>
+
+  <div class="container text-center mb-4">
       <div class="row">
           <div class="col-sm-12">
               <div class="content">
-                  <form>
+                  <form onsubmit="return false" id="newsletterForm">
                       <h3 class="text-light">Sign up for email</h3>
                       <p class="text-light">Be the first to know about new arrivals, exclusive great deals, & more.</p>
                       <div class="input-group">
                           <input type="email" class="form-control" placeholder="Email Address">
                           <span class="input-group-btn bg-warning rounded-end-2">
-                              <button class="btn" type="submit">Subscribe Now</button>
+                              <button class="btn" id="subscribeButton" type="submit">Subscribe Now</button>
                           </span>
                       </div>
                   </form>
+                  <h4 class="text-light d-none" id="subscribedMessage">Subscribed!</h4>
               </div>
           </div>
       </div>
@@ -97,7 +100,10 @@
 </footer>
 <!-- Footer End -->
 
-<script>loadProducts()</script>
+<script>
+  loadProducts()
+  setupNewsletterButtons()
+</script>
 
 </body>
 </html>
